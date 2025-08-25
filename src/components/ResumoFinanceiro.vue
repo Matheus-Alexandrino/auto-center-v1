@@ -10,7 +10,7 @@
       titulo="Serviços"
       valor="R$ 17.257,00"
       variacao="8% vs mês passado"
-      icone="/icons/tools.svg"
+      icone="/icons/tools.png"
     />
     <CardResumo
       titulo="Peças"

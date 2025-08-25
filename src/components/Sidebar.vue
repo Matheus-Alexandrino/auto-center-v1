@@ -1,10 +1,8 @@
 <template>
-  <aside class="w-13 h-screen bg-white shadow-md fixed top-0 left-0 flex flex-col items-center justify-between py-6 z-50">
+  <aside class=" w-13 h-screen fixed top-0 left-10 flex flex-col items-center justify-between py-6 z-50">
     <!-- Topo com logo -->
-    <div class="flex flex-col items-center space-y-4">
-    <img src="/icons/home.svg" alt="" class="" />
-    <SidebarItem icon="/icons/logo.svg" label="" />
-
+    <div class="bg-gray-100 flex flex-col items-center space-y-4">
+    <img src="/icons/logo.png" alt="logo" class="w-12 h-12" />    
       <!-- Ícones do menu -->
       <nav class="flex flex-col items-center space-y-6">
         <SidebarItem icon="/icons/home.svg" label="Home" />

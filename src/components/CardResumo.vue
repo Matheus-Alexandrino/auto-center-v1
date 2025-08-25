@@ -5,7 +5,7 @@
       <p class="text-3xl font-bold text-gray-800">{{ valor }}</p>
       <p class="text-xs text-gray-400">↗ {{ variacao }}</p>
     </div>
-    <img :src="icone" class="w-14 h-14" alt="Ícone" />
+    <img :src="icone" class="w-34 h-14" alt="Ícone" />
   </div>
 </template>
 
