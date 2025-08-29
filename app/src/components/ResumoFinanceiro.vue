@@ -4,7 +4,7 @@
       titulo="Faturamento"
       valor="R$ 57.257,00"
       variacao="12% vs mês passado"
-      icone="/icons/money.png"
+      icone="/icons/money.svg"
     />
     <CardResumo
       titulo="Serviços"
@@ -16,7 +16,7 @@
       titulo="Peças"
       valor="R$ 47.257,00"
       variacao="5% vs mês passado"
-      icone="/icons/parts.png"
+      icone="/icons/parts.svg"
     />
   </div>
 </template>
