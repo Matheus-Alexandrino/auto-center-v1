@@ -9,11 +9,10 @@
       <div class="text-center mb-6">
         
       </div>
-
-      <!-- Formulário -->
+      
       <form @submit.prevent="handleLogin" class="space-y-4">
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Usuário </label>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Usuário</label>
           <input
             v-model="email"
             type="email"
