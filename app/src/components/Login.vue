@@ -3,7 +3,7 @@
     <div class="bg-gray-100 p-10 rounded-xl shadow-lg w-full max-w-md">
       
       <div class="flex justify-center mb-6">
-        <img src="/icons/logo1.png" alt="Logo" class="w-34 h-24" />         
+        <!-- <img src="@/icons/logo1.png" alt="Logo" class="w-34 h-24" />          -->
       </div>
       
       <div class="text-center mb-6">

@@ -5,7 +5,7 @@ import { useAuthStore } from '@/stores/auth'
 
 const routes = [
     { path: '/', component: Login },
-    { path: '/dashboard', component: Dashboard, meta: { requiresAuth: true } }
+    { path: '/Dashboard', component: Dashboard, meta: { requiresAuth: true } }
 ]
 
 const router = createRouter({
