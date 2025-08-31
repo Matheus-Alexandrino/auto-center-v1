@@ -1,14 +1,13 @@
 <template>
-  <div class="bg-white rounded-xl shadow-md p-4 space-y-2 hover:shadow-lg transition">
-    <!-- Status -->
+  <div class="bg-white rounded-xl shadow-md p-4 space-y-2 hover:shadow-lg transition">    
     <span
       class="text-xs font-semibold px-2 py-1 rounded-full"
       :class="{
-        'bg-red-100 text-red-600': dados.status === 'ATRASADO',
-        'bg-yellow-100 text-yellow-600': dados.status === 'DIAGNÓSTICO CHECKLIST' || dados.status === 'EM ANDAMENTO',
-        'bg-purple-100 text-purple-600': dados.status === 'PEÇAS TERCEIROS',
-        'bg-blue-100 text-blue-600': dados.status === 'EXECUÇÃO',
-        'bg-green-100 text-green-600': dados.status === 'FINALIZADO'
+        'bg-red-400 text-red-600': dados.status === 'ATRASADO',
+        'bg-yellow-400 text-yellow-600': dados.status === 'DIAGNÓSTICO CHECKLIST' || dados.status === 'EM ANDAMENTO',
+        'bg-orange-400 text-purple-600': dados.status === 'PEÇAS TERCEIROS',
+        'bg-blue-400 text-blue-600': dados.status === 'EXECUÇÃO',
+        'bg-green-400 text-green-600': dados.status === 'FINALIZADO'
       }"
     >
       {{ dados.status }}

@@ -18,8 +18,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     const auth = useAuthStore()
-
-    // Recupera token do localStorage se não estiver na store
+    
     if (!auth.token) {
         const savedToken = localStorage.getItem('token')
         if (savedToken) {

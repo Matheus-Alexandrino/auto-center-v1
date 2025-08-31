@@ -27,7 +27,7 @@
           <li>
             <button
               @click="abrirConfiguracoes"
-              class="w-full text-left text-gray-00 px-2 py-2 hover:bg-gray-100"
+              class="w-full text-left text-gray-400 px-2 py-2 hover:bg-gray-100"
             >
               ⚙️ Configurações
             </button>
@@ -35,7 +35,7 @@
           <li>
             <button
               @click="logout"
-              class="w-full text-left px-2 py-2 hover:bg-gray-100 text-red-600"
+              class="w-full text-left px-2 py-2 hover:bg-gray-100 text-red-400"
             >
               🚪 Sair
             </button>
