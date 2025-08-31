@@ -1,13 +1,10 @@
 FROM node:20-alpine
 WORKDIR /app
 RUN corepack enable
-# COPY package.json package-lock.json* pnpm-lock.yaml* yarn.lock* ./
-COPY package.json ./
-COPY package-lock.json ./
-
+COPY package.json package-lock.json* pnpm-lock.yaml* yarn.lock* ./
 RUN if [ -f pnpm-lock.yaml ]; then pnpm i --frozen-lockfile; \
-    elif [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-    else npm ci; fi
+  elif [ -f yarn.lock ]; then yarn --frozen-lockfile; \
+  else npm ci; fi
 COPY . .
 EXPOSE 5173
 CMD sh -lc "\
