@@ -1,19 +1,16 @@
 <template>
   <aside class="w-13 h-screen fixed top-0 left-10 flex flex-col items-center justify-between py-6 z-50">
-    <!-- Topo com logo e menu -->
     <div class="bg-gray-100 flex flex-col items-center space-y-6">
-      <img src="/icons/logo.png" alt="logo" class="w-12 h-12" />
+      <img src="/icons/logo.png" alt="logo" class="w-20 h-20" />
 
-      <!-- Ícones do menu -->
-      <nav class="flex flex-col items-center space-y-6">
-        <SidebarItem icon="/icons/home.svg" label="Home" />
-        <SidebarItem icon="/icons/orders.svg" label="Ordens" />
-        <SidebarItem icon="/icons/tools.svg" label="Serviços" />
-        <SidebarItem icon="/icons/settings.svg" label="Configurações" />
-      </nav>
+<nav class="flex flex-col items-center space-y-6">
+  <SidebarItem icon="/icons/home.svg" label="Home" to="/" class="'bg-orange-100 rounded-lg': isActive"/>
+  <SidebarItem icon="/icons/orders.svg" label="Ordens" to="/ordens" />
+  <SidebarItem icon="/icons/tools.svg" label="Serviços" to="/servicos" />
+  <SidebarItem icon="/icons/settings.svg" label="Configurações" to="/configuracoes" />
+</nav>
     </div>
 
-    <!-- Rodapé com botão de usuário -->
     <div class="relative mb-4">
       <button
         @click="mostrarMenuUsuario = !mostrarMenuUsuario"
@@ -21,8 +18,7 @@
       >
         M
       </button>
-
-      <!-- Popup de usuário -->
+      
       <div
         v-if="mostrarMenuUsuario"
         class="absolute bottom-12 left-0 w-40 bg-white border rounded-lg shadow-lg z-50"
@@ -46,8 +42,7 @@
           </li>
         </ul>
       </div>
-
-      <!-- Copyright -->
+      
       <div class="text-xs text-gray-300 mt-4 text-center">© 2025</div>
     </div>
   </aside>

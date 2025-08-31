@@ -1,11 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from '@/components/Login.vue'
 import Dashboard from '@/components/Dashboard.vue'
+import ListagemOS from '@/components/ListagemOS.vue'
+
 import { useAuthStore } from '@/stores/auth'
 
 const routes = [
     { path: '/', component: Login },
-    { path: '/Dashboard', component: Dashboard, meta: { requiresAuth: true } }
+    { path: '/Dashboard', component: Dashboard, meta: { requiresAuth: true } },
+    { path: '/ordens', component: ListagemOS, meta: { requiresAuth: true } }
 ]
 
 const router = createRouter({
