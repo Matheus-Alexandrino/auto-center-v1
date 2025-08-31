@@ -2,7 +2,7 @@
   <aside class="w-13 h-screen fixed top-0 left-10 flex flex-col items-center justify-between py-6 z-50">
     <!-- Topo com logo e menu -->
     <div class="bg-gray-100 flex flex-col items-center space-y-6">
-      <img src="/icons/logo.svg" alt="logo" class="w-12 h-12" />
+      <img src="/icons/logo.png" alt="logo" class="w-12 h-12" />
 
       <!-- Ícones do menu -->
       <nav class="flex flex-col items-center space-y-6">
