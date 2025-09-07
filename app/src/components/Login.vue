@@ -50,7 +50,7 @@
               v-model="password"
               type="password"
               placeholder=""
-              class="flex-grow px-4 py-2 border  text-gray-700 border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-orange-400 bg-yellow-50"
+              class="flex-grow px-4 py-2 border  text-gray-700 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 bg-yellow-50"
               required
             />
   
